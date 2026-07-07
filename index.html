@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>losTintes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-bao">
+        <li class="text">BAÑO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-bao_h1">
+        <li class="text">BAÑO_H1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-bao_h4">
+        <li class="text">BAÑO_H4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-cocina_entrada_ir">
+        <li class="text">COCINA_ENTRADA_IR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-cocina_entrada_volver">
+        <li class="text">COCINA_ENTRADA_VOLVER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-cocina_ir">
+        <li class="text">COCINA_IR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-cocina_volver">
+        <li class="text">COCINA_VOLVER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-entrada_h1">
+        <li class="text">ENTRADA_H1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-entrada1">
+        <li class="text">ENTRADA1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-entrada2">
+        <li class="text">ENTRADA2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-entrada3">
+        <li class="text">ENTRADA3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-entrada4">
+        <li class="text">ENTRADA4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-h1">
+        <li class="text">H1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-h2">
+        <li class="text">H2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-h3">
+        <li class="text">H3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-h4">
+        <li class="text">H4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-pasillo1_baoh4">
+        <li class="text">PASILLO1_BAÑOH4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-pasillo1_h3">
+        <li class="text">PASILLO1_H3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-pasillo1_ir">
+        <li class="text">PASILLO1_IR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-pasillo1_volver">
+        <li class="text">PASILLO1_VOLVER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-pasillo2_bao">
+        <li class="text">PASILLO2_BAÑO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-pasillo2_cocina">
+        <li class="text">PASILLO2_COCINA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-pasillo2_h1">
+        <li class="text">PASILLO2_H1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-pasillo2_h2">
+        <li class="text">PASILLO2_H2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-pasillo2_ir">
+        <li class="text">PASILLO2_IR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-pasillo2_volver">
+        <li class="text">PASILLO2_VOLVER</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-sala_entrando">
+        <li class="text">SALA_ENTRANDO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-sala_saliendo">
+        <li class="text">SALA_SALIENDO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-terraza">
+        <li class="text">TERRAZA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-terraza_cocina_ir">
+        <li class="text">TERRAZA_COCINA_IR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-entrada_h1_s">
+        <li class="text">ENTRADA_H1_s</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
